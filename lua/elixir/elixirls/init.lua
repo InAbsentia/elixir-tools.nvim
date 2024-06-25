@@ -9,7 +9,7 @@ local Utils = require("elixir.utils")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local default_install_tag = "tags/v0.19.0"
+local default_install_tag = "tags/v0.22.0"
 
 local elixir_nvim_output_bufnr
 
@@ -195,9 +195,11 @@ M.on_attach = function(client, bufnr)
   local add_user_cmd = vim.api.nvim_buf_create_user_command
   vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "InsertLeave" }, {
     buffer = bufnr,
-    callback = vim.lsp.codelens.refresh,
+    callback = function()
+      vim.lsp.codelens.refresh { bufnr = bufnr }
+    end,
   })
-  vim.lsp.codelens.refresh()
+  vim.lsp.codelens.refresh { bufnr = bufnr }
   add_user_cmd(bufnr, "ElixirFromPipe", M.from_pipe(client), {})
   add_user_cmd(bufnr, "ElixirToPipe", M.to_pipe(client), {})
   add_user_cmd(bufnr, "ElixirRestart", M.restart(client), {})

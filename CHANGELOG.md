@@ -2,6 +2,39 @@
 
 ## Unreleased
 
+## [0.14.3](https://github.com/elixir-tools/elixir-tools.nvim/compare/v0.14.2...v0.14.3) (2024-06-14)
+
+
+### Bug Fixes
+
+* bump Elixir LS version ([f147a6a](https://github.com/elixir-tools/elixir-tools.nvim/commit/f147a6afa87e9f21b4c720171f7d6146c87e49e2)), closes [#215](https://github.com/elixir-tools/elixir-tools.nvim/issues/215)
+
+## [0.14.2](https://github.com/elixir-tools/elixir-tools.nvim/compare/v0.14.1...v0.14.2) (2024-05-23)
+
+
+### Bug Fixes
+
+* **elixirls:** only refresh for the current buffer ([d04320b](https://github.com/elixir-tools/elixir-tools.nvim/commit/d04320b40459c097388dbe8e20711bbfa9bcdadd))
+
+## [0.14.1](https://github.com/elixir-tools/elixir-tools.nvim/compare/v0.14.0...v0.14.1) (2024-05-23)
+
+
+### Bug Fixes
+
+* **elixirls:** properly setup codelens autocmd ([5945e44](https://github.com/elixir-tools/elixir-tools.nvim/commit/5945e44ded3a5b61ae3ab03a06d6928846e0aab0))
+
+## [0.14.0](https://github.com/elixir-tools/elixir-tools.nvim/compare/v0.13.2...v0.14.0) (2024-05-02)
+
+
+### Features
+
+* add alias-refactor command ([#206](https://github.com/elixir-tools/elixir-tools.nvim/issues/206)) ([2ee9274](https://github.com/elixir-tools/elixir-tools.nvim/commit/2ee9274f0d34115276451e8fd78eecb98557c7a4))
+
+
+### Bug Fixes
+
+* **nextls:** only activate for valid buffers ([76d6025](https://github.com/elixir-tools/elixir-tools.nvim/commit/76d6025f0dcfb15b170a901c31a6adbf8c9e7492))
+
 ## [0.13.2](https://github.com/elixir-tools/elixir-tools.nvim/compare/v0.13.1...v0.13.2) (2024-03-08)
 
 
